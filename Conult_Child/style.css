@@ -94,7 +94,7 @@ ul.gva-nav-menu > li > a::after {
     transition: all 0.3s;
     border: none;
     border-top: 0;
-    height: 500px;
+    height: 470px !important;
   }
   
   .portfolio-v3 .case-content .content-inner {
@@ -120,8 +120,8 @@ ul.gva-nav-menu > li > a::after {
    
   .portfolio-read-more{
     padding-top: 20px;
-    bottom: 23px;
-    position: absolute;
+    bottom: 23px !important;
+    position: absolute !important;
   }
 
   .btn-portfolio-inline {
@@ -178,6 +178,12 @@ ul.gva-nav-menu > li > a::after {
   .elementor-1371 .elementor-element.elementor-element-fa8c2c9 > .elementor-widget-container{
     background-color: #31c155 !important;
     padding: 50px 60px 70px 70px !important;
+  }
+
+  @media(max-width:768px){
+    .elementor-1371 .elementor-element.elementor-element-fa8c2c9 > .elementor-widget-container{
+      padding: 20px 25px 20px 20px !important;
+    }
   }
   
   .newsletter-form .title {
