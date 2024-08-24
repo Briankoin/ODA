@@ -55,7 +55,19 @@ ul.gva-nav-menu > li > a::after {
     font-size: 12px;
     line-height: 16px;
 }
+/* Heading Blocks */
+.bolder-headking-line .gsc-heading .heading-line span {
+  height: 5px;
+  width: 20px;
+}
+/* Icon Box */
+.margin-top-0 .elementor-icon-box-icon {
+  margin-top: 0 !important;
+}
 
+.elementor-icon-box-title a:hover {
+  color: var(--e-global-color-primary);
+}
 /* Helpers */
 .padding-0{
     padding: 0 !important;
