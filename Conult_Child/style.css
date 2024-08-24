@@ -94,6 +94,7 @@ ul.gva-nav-menu > li > a::after {
     transition: all 0.3s;
     border: none;
     border-top: 0;
+    height: 500px;
   }
   
   .portfolio-v3 .case-content .content-inner {
@@ -119,6 +120,8 @@ ul.gva-nav-menu > li > a::after {
    
   .portfolio-read-more{
     padding-top: 20px;
+    bottom: 23px;
+    position: absolute;
   }
 
   .btn-portfolio-inline {
