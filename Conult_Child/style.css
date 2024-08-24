@@ -187,7 +187,8 @@ ul.gva-nav-menu > li > a::after {
   .newsletter-form .content-form input[type="email"]{
     color: #000000 !important;
     background: #fff !important;
-    width: 70% !important;
+    width: 80% !important;
+    margin-right: 20px;
   }
 
   .btn, .btn-theme, .btn, .btn-white, .btn-gray, .btn-black, input[type*="submit"]:not(.fa):not(.btn-theme):not(.las), #tribe-events .tribe-events-button, .tribe-events-button{
