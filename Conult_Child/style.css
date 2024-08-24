@@ -94,7 +94,7 @@ ul.gva-nav-menu > li > a::after {
     transition: all 0.3s;
     border: none;
     border-top: 0;
-    height: 470px !important;
+    height: 420px !important;
   }
   
   .portfolio-v3 .case-content .content-inner {
