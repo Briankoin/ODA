@@ -169,4 +169,30 @@ ul.gva-nav-menu > li > a::after {
     margin-bottom: 0;
     opacity: 1;
   }
+
+  /*Mailchimp*/
+
+  .elementor-1371 .elementor-element.elementor-element-fa8c2c9 > .elementor-widget-container{
+    background-color: #31c155 !important;
+    padding: 50px 60px 70px 70px !important;
+  }
   
+  .newsletter-form .title {
+    color: #000000 !important;
+    font-size: 40px !important;
+    margin: 0 0 35px !important;
+    font-weight: 600;
+  }
+
+  .newsletter-form .content-form input[type="email"]{
+    color: #000000 !important;
+    background: #fff !important;
+    width: 70% !important;
+  }
+
+  .btn, .btn-theme, .btn, .btn-white, .btn-gray, .btn-black, input[type*="submit"]:not(.fa):not(.btn-theme):not(.las), #tribe-events .tribe-events-button, .tribe-events-button{
+    background: #154451 !important;
+    width: 190px !important;
+    color: #31c155 !important;
+    letter-spacing: 1px !important;
+  }
