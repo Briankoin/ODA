@@ -206,3 +206,19 @@ ul.gva-nav-menu > li > a::after {
     color: #31c155 !important;
     letter-spacing: 1px !important;
   }
+
+
+  /*About Us PAge*/
+
+  .plus-about{
+    color: #31c155 ;
+  }
+
+  .milestone-block.style-2 .box-content .milestone-icon .icon{
+    background: #edf3f600;
+  }
+
+  span.dots-about{
+    display: flex;
+    transform: rotate(-90deg); 
+  }
