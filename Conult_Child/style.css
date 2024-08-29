@@ -173,6 +173,19 @@ ul.gva-nav-menu > li > a::after {
     opacity: 1;
   }
 
+  .portfolio-v3 .portfolio-post-thumbnail a img {
+    display: inline-block;
+    position: relative;
+    object-fit: cover;
+    object-position: center;
+    max-height: 250px;
+  }
+  .portfolio-v3 .portfolio-post-thumbnail a {
+    display: inline-block;
+    position: relative;
+    height: 100%;
+    width: 100%;
+  }
   /*Mailchimp*/
 
   .elementor-1371 .elementor-element.elementor-element-fa8c2c9 > .elementor-widget-container{
