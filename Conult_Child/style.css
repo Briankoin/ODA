@@ -195,27 +195,56 @@ ul.gva-nav-menu > li > a::after {
 
   @media(max-width:768px){
     .elementor-1371 .elementor-element.elementor-element-fa8c2c9 > .elementor-widget-container{
-      padding: 20px 25px 20px 20px !important;
+      padding: 15px 15px 15px 15px !important;
     }
   }
   
-  .newsletter-form .title {
+  .mailchimp-newsletter-form .mailchimp-title {
     color: #000000 !important;
     font-size: 40px !important;
     margin: 0 0 35px !important;
     font-weight: 600;
   }
 
-  .newsletter-form .content-form input[type="email"]{
-    color: #000000 !important;
-    background: #fff !important;
-    width: 80% !important;
-    margin-right: 20px;
+  @media(max-width:768px){
+    .mailchimp-newsletter-form .mailchimp-content-form input[type="email"]{
+      width: 50% !important;
+      padding: 0px 5px 4px 5px !important;
+    }
+
+    .mailchimp-newsletter-submit{ 
+      width: 130px !important;
+     
+    }
   }
 
-  .btn, .btn-theme, .btn, .btn-white, .btn-gray, .btn-black, input[type*="submit"]:not(.fa):not(.btn-theme):not(.las), #tribe-events .tribe-events-button, .tribe-events-button{
+  .mailchimp-newsletter-form .mailchimp-content-form input[type="email"]{
+    color: #000000 !important;
+    background: #fff !important;
+    width: 70% ;
+    margin-right: 20px;
+    padding: 7px 5px 7px 5px;
+  }
+
+  .mailchimp-newsletter-submit{
     background: #154451 !important;
-    width: 190px !important;
+    width: 190px ;
     color: #31c155 !important;
     letter-spacing: 1px !important;
+  }
+
+
+  /*About Us PAge*/
+
+  .plus-about{
+    color: #31c155 ;
+  }
+
+  .milestone-block.style-2 .box-content .milestone-icon .icon{
+    background: #edf3f600;
+  }
+
+  span.dots-about{
+    display: flex;
+    transform: rotate(-90deg); 
   }
