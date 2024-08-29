@@ -94,7 +94,7 @@ ul.gva-nav-menu > li > a::after {
     transition: all 0.3s;
     border: none;
     border-top: 0;
-    height: 420px !important;
+    height: auto !important;
   }
   
   .portfolio-v3 .case-content .content-inner {
@@ -120,8 +120,6 @@ ul.gva-nav-menu > li > a::after {
    
   .portfolio-read-more{
     padding-top: 20px;
-    bottom: 23px !important;
-    position: absolute !important;
   }
 
   .btn-portfolio-inline {
@@ -234,4 +232,9 @@ ul.gva-nav-menu > li > a::after {
   span.dots-about{
     display: flex;
     transform: rotate(-90deg); 
+  }
+
+  span.green-dots{
+    color: #155541;
+    font-size: 56px;
   }
