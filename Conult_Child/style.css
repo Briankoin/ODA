@@ -251,3 +251,11 @@ ul.gva-nav-menu > li > a::after {
     color: #155541;
     font-size: 56px;
   }
+
+  .mission-vision .gsc-heading .heading-line span{
+    height: 5px;
+    width: 20px;
+    background: #ea8e1b;
+  }
+
+  
