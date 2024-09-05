@@ -1,10 +1,8 @@
 .container {
     display: flex;
     align-items: center;
-    background-color: white;
     padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;    
     flex-direction: row;
     max-width: 100%;
     box-sizing: border-box;
@@ -26,7 +24,6 @@
 .profile-info {
     margin-left: 50px;
     background-color: #f0f0f0;
-    padding: 30px 10px 30px 50px;
     border-radius: 15px;
     position: relative;
     flex-grow: 1;
@@ -53,14 +50,16 @@
 .content {
     border-left: 1px solid #ddd;
     padding-left: 20px;
+    width: 700px;
 }
 .content h3 {
     background-color: #2dac6e;
     color: #000000;
-    padding: 10px 100px 10px 50px;
+    padding: 10px 50px 10px 50px;
     border-radius: 0px 25px 0 25px;
     margin-top: -20px;
     font-size: 20px;
+    width: 400px;
 }
 .content p {
     margin: 10px 0;
@@ -102,29 +101,55 @@
 }
 .circle {
     position: absolute;
-    left: 34%;
+    left: 47%;
     top: 50%;
     transform: translateY(-50%);
     width: 15px;
     height: 13px;
-    background-color: #2b7a2b;
+    background-color: #2dac6e;
     border-radius: 50%;
 }
-@media (max-width: 768px) {
-    body {
-        padding: 0 20px;
-    }
+.connect {
+    align-items: center;
+    display: flex;
+    
+}
+@media (max-width: 1200px) {
     .container {
         flex-direction: column;
-        align-items: flex-start;
         width: 100%;
-        padding: 20px;
+        padding:10px;
         box-sizing: border-box;
+        text-align: center;
+        align-items: center;
+    }
+    .circle{
+        display: none;
+    }
+    .content{
+        width: auto !important;
+    }
+    .content p{
+        padding-bottom: 20px;
+    }
+    .content h3{
+        margin-top: 0px;
+        width: 100%;
+        text-align: center;
+        justify-self: center;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+    }
+    .profile-info {
+        margin-left: 0px;
+        margin-top: 10px;
     }
     .profile {
         margin-right: 0;
+        flex-direction: column;
         margin-bottom: 20px;
-        width: 100%; /* Adjust width for mobile */
+        width: 100%; 
     }
     .profile-info::before {
         display: none;
@@ -132,5 +157,18 @@
     .content {
         border-left: none;
         padding-left: 0;
+    }
+    .connect {
+        align-items: center;
+        flex-direction: row;
+        display: flex;
+        margin-top: 10px;
+    }
+    .social-icons {
+        display: flex;
+        align-items: center;
+        margin-top: 10px;
+        justify-content: center;
+        flex-direction: column;
     }
 }

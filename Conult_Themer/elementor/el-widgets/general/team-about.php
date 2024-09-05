@@ -156,6 +156,40 @@ class My_Profile_Card_Widget extends GVAElement_Base {
         $this->end_controls_section();
 
         $this->start_controls_section(
+            'container_style',
+            [
+                'label' => esc_html__('Container Syle', 'conult-themer'),
+                'tab' => \Elementor\Controls_Manager::TAB_STYLE,
+
+            ]
+            );
+
+        $this->add_responsive_control(
+            'container_padding',
+            [
+                'label' => esc_html('Container Padding', 'conult-themer'),
+                'type' => \Elementor\Controls_Manager::DIMENSIONS,
+                'size_units' => [ 'px', '%', 'em', 'rem', 'custom' ],
+				'selectors' => [
+					'{{WRAPPER}} .profile-info' => 'padding: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
+                ],
+
+            ]
+            );
+
+        $this->add_group_control(
+            \Elementor\Group_Control_Background::get_type(),
+            [
+                'name' => 'container_background_color',
+                'types' => [ 'classic', 'gradient', 'video' ],
+				'selector' => '{{WRAPPER}} .profile-info',
+
+            ]
+            );
+
+            $this->end_controls_section();
+
+        $this->start_controls_section(
             'card_name_position_style',
             [
                 'label' => esc_html__( 'Name And Postion Style', 'conult-themer' ),
@@ -191,7 +225,7 @@ class My_Profile_Card_Widget extends GVAElement_Base {
                     'type' => \Elementor\Controls_Manager::COLOR,
                     'selectors' => [
     
-                        '{{WRAPPER}} .profile-name' => 'color: {{VALUE}}', 
+                        '{{WRAPPER}} .profile-position' => 'color: {{VALUE}}', 
     
                     ],
                 ]
@@ -273,6 +307,7 @@ class My_Profile_Card_Widget extends GVAElement_Base {
                 <div class="social-icons">
                     <span class="connect-on"> CONNECT ON </span>
                     <?php if ( ! empty( $facebook_link ) ) : ?>
+                        <div class="connect">
                     <a href="<?php echo esc_url( $facebook_link ); ?>" target="_blank">
                         <i class="fab fa-facebook-f"></i>
                     </a>
@@ -295,6 +330,7 @@ class My_Profile_Card_Widget extends GVAElement_Base {
                         <i class="fab fa-instagram"></i>
                     </a>
                 <?php endif; ?>
+                        </div>
                 </div>
             </div>
         </div>
