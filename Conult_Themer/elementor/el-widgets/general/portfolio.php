@@ -234,6 +234,24 @@ class GVAElement_Portfolio extends GVAElement_Base{
 
         $this->add_control_grid(array('layout' => 'grid'));
 
+        $this->start_controls_section(
+            'portfolio_styles',
+            [
+                'label' => esc_html__('Heading', 'conult-themer'),
+                'tab'   => Controls_Manager::TAB_STYLE,
+            ]
+        );
+
+        $this->add_group_control(
+			\Elementor\Group_Control_Typography::get_type(),
+			[
+				'name' => 'Portfolio_typography',
+				'selector' => '{{WRAPPER}} .portfolio-v3 .portfolio-entry-title',
+			]
+		);
+
+        $this->end_controls_section();
+
     }
 
     public static function get_query_args(  $settings ) {

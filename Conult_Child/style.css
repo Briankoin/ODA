@@ -248,7 +248,7 @@ ul.gva-nav-menu > li > a::after {
   }
 
   span.green-dots{
-    color: #155541;
+    color: #2dac6e;
     font-size: 56px;
   }
 
@@ -256,6 +256,11 @@ ul.gva-nav-menu > li > a::after {
     height: 5px;
     width: 20px;
     background: #ea8e1b;
+  }
+
+  .gva-element-gva-gallery .gallery-item .image-content:after{
+    background: #2dac6e !important;
+    opacity: 0.5 !important;
   }
 
   
