@@ -266,6 +266,13 @@ class Conult_Elementor_Addons {
 
       wp_register_script('gmap3', GAVIAS_CONULT_PLUGIN_URL . '/elementor/assets/libs/gmap3.min.js'); 
 
+	  wp_register_script('amcharts-js', GAVIAS_CONULT_PLUGIN_URL . '/elementor/assets/libs/amcharts.js', array('amcharts-core','amcharts-maps','amcharts-worldlow','amcharts-animated'), '1.0.0', true);
+
+	  wp_register_script( 'amcharts-core', 'https://cdn.amcharts.com/lib/5/index.js', array(), null, true );
+	  wp_register_script( 'amcharts-maps', 'https://cdn.amcharts.com/lib/5/map.js', array(), null, true );
+	  wp_register_script( 'amcharts-worldlow', 'https://cdn.amcharts.com/lib/5/geodata/worldLow.js', array(), null, true );
+	  wp_register_script( 'amcharts-animated', 'https://cdn.amcharts.com/lib/5/themes/Animated.js', array(), null, true );
+
 
 
    }
@@ -279,6 +286,8 @@ class Conult_Elementor_Addons {
 		wp_register_style('swiper', GAVIAS_CONULT_PLUGIN_URL . 'elementor/assets/libs/swiper/swiper.min.css', false, '1.0.0');
 
 		wp_register_style('team-about', GAVIAS_CONULT_PLUGIN_URL . 'elementor/assets/libs/team-about.css', false, '1.0.0');
+
+		wp_register_style('amchart-css', GAVIAS_CONULT_PLUGIN_URL . 'elementor/assets/libs/amchart.css', false, '1.0.0');
 
 
  	}
