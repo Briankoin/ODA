@@ -263,4 +263,55 @@ ul.gva-nav-menu > li > a::after {
     opacity: 0.5 !important;
   }
 
+  .contact-us .breadcrumb li::after{
+    color: #000000 !important;
+  }
+
+  .contact-us .breadcrumb li a{
+    color: #000000 !important;
+  }
+
+  .contact-us  .breadcrumb li{
+    color: #ea8e1b !important;
+  }
   
+  .wpcf7-form input[type*="email"], .wpcf7-form input[type*="text"], .wpcf7-form input[type*="tel"]{
+    background: #fff !important;
+    border: 1px solid #000000 !important;
+    border-radius: 5px !important;
+  }
+
+  input[type="text"], input[type="tel"], input[type="password"], input[type="email"], input[type="url"], input[type="date"], input[type="number"], textarea, select, #checkout_form .input_group > div input, #edit_user_profile .input_group > div input{
+    color: #000000 !important;
+  }
+
+  .wpcf7-form textarea{
+    background: #fff !important;
+    border: 1px solid #000000 !important;
+    border-radius: 5px !important;
+  }
+
+  .contact-buttons{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  input.wpcf7-form-control.wpcf7-submit.has-spinner.contact-send{
+    background: #2dac6e !important;
+    border-radius: 10px;
+    color: #000000;
+    letter-spacing: 1px;
+    padding: 15px 40px 15px 40px;
+    font-weight: 900;
+  }
+
+  
+  input.wpcf7-form-control.wpcf7-submit.has-spinner.contact-clear{
+    background: #ea8e1b !important;
+    border-radius: 10px;
+    color: #000000;
+    letter-spacing: 1px;
+    padding: 15px 40px 15px 40px;
+    font-weight: 900;
+  }
