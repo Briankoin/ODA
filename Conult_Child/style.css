@@ -191,8 +191,16 @@ ul.gva-nav-menu > li > a::after {
     padding: 50px 60px 70px 70px !important;
   }
 
+  .elementor-27 .elementor-element.elementor-element-42f7187 > .elementor-widget-container {
+    background-color: #31c155 !important;
+    padding: 50px 60px 70px 70px !important;
+}
+
   @media(max-width:768px){
     .elementor-1371 .elementor-element.elementor-element-fa8c2c9 > .elementor-widget-container{
+      padding: 15px 15px 15px 15px !important;
+    }
+    .elementor-27 .elementor-element.elementor-element-42f7187 > .elementor-widget-container {
       padding: 15px 15px 15px 15px !important;
     }
   }
