@@ -355,5 +355,6 @@ ul.gva-nav-menu > li > a::after {
     background-color: #ea8e1b;
   }
 
-
-  /**Footer**/
+ .what-we-do-text{
+    text-align: justify;
+  }
