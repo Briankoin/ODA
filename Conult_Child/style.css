@@ -8,62 +8,67 @@ Template: conult
 */
 
 /* Template customizations */
-body{
+body {
   font-weight: 300;
   line-height: 1.3em;
+  color: #172333;
 }
-ul.gva-nav-menu > li > a::after {
-	background-color: var(--e-global-color-secondary);
+
+ul.gva-nav-menu>li>a::after {
+  background-color: var(--e-global-color-secondary);
 }
 
 /* Breadcrumbs */
 .custom-breadcrumb .heading-title {
-    font-size: 47px;
+  font-size: 47px;
 }
 
 .custom-breadcrumb .breadcrumb li {
-	font-weight: 800;
-	text-transform: uppercase;
-	font-size: 18px;
+  font-weight: 800;
+  text-transform: uppercase;
+  font-size: 18px;
 }
 
 .custom-breadcrumb .breadcrumb {
-    position: relative;
-	left: 0 !important;
-	bottom: 0;
-	background: transparent;
-	color: #FFFFFF;
+  position: relative;
+  left: 0 !important;
+  bottom: 0;
+  background: transparent;
+  color: #FFFFFF;
 }
 
 .custom-breadcrumb .breadcrumb li a {
-    color: #FFFFFF;
+  color: #FFFFFF;
 }
+
 .custom-breadcrumb .breadcrumb li a:hover {
-	text-decoration: none;
-    color: #ea8e1b;
+  text-decoration: none;
+  color: #ea8e1b;
 }
 
 .custom-breadcrumb .breadcrumb {
-    padding: 9px 0px 22px;
+  padding: 9px 0px 22px;
 }
 
 .custom-breadcrumb .breadcrumb li:first-child {
-    padding-left: 0;
+  padding-left: 0;
 }
 
 .custom-breadcrumb .breadcrumb li::after {
-    content: "\f054";
-    font-family: "Font Awesome 5 Free";
-    font-weight: 700;
-    color: #FFFFFF;
-    font-size: 12px;
-    line-height: 16px;
+  content: "\f054";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 700;
+  color: #FFFFFF;
+  font-size: 12px;
+  line-height: 16px;
 }
+
 /* Heading Blocks */
 .bolder-headking-line .gsc-heading .heading-line span {
   height: 5px;
   width: 20px;
 }
+
 /* Icon Box */
 .margin-top-0 .elementor-icon-box-icon {
   margin-top: 0 !important;
@@ -72,293 +77,375 @@ ul.gva-nav-menu > li > a::after {
 .elementor-icon-box-title a:hover {
   color: var(--e-global-color-primary);
 }
+
 /* Helpers */
-.padding-0{
-    padding: 0 !important;
+.padding-0 {
+  padding: 0 !important;
 }
 
 /*Portfolio */
 
 .portfolio-v3 {
-    position: relative;
-    overflow: hidden;
-    max-width: 680px;
-    margin: 0 auto 30px;
-    -webkit-transition: all 0.35s;
-    transition: all 0.35s;
-    border-radius: 15px;
-  }
-
-  .portfolio-v3 .case-content {
-    position: relative;
-    background: #fff;
-    z-index: 1;
-    padding: 25px 25px 25px;
-    -webkit-transition: all 0.3s;
-    transition: all 0.3s;
-    border: none;
-    border-top: 0;
-    height: auto !important;
-  }
-  
-  .portfolio-v3 .case-content .content-inner {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-  }
-
-  .portfolio-title-ref{
-    color: #31c155 ;
-    text-transform: uppercase;
-    font-weight: 800;
-  }
-
-  .portfolio-entry-desc {
-    font-size: 17px;
-    color: #000000;
-    line-height: 25px;
-  }
-   
-  .portfolio-read-more{
-    padding-top: 20px;
-  }
-
-  .btn-portfolio-inline {
-    font-size: 14px !important;
-    text-transform: uppercase;
-    color: #000000 !important;
-    position: relative;
-    -webkit-transition: all 0.35s;
-    transition: all 0.35s;
-    -moz-transition: all 0.35s;
-    -ms-transition: all 0.35s;
-    font-weight: 700;
-    letter-spacing: 0px;
-    z-index: 2;
-    line-height: 15px;
-    background-color: #fff;
-    height: 55px;
-    display: flex;
-    width: 180px;
-    text-align: center;
-    justify-content: center;
-    border: 2px solid #acacb8;
-    border-radius: 8px;
-    align-content: center;
-    flex-wrap: wrap;
-  }
-  
-  .btn-portfolio-inline:before {
-    content: '';
-    width: 100%;
-    height: 2px;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    z-index: 1;
-    background: var(--e-global-color-primary);
-    opacity: 0;
-    margin-bottom: -2px;
-    -webkit-transition: all 0.35s;
-    transition: all 0.35s;
-  }
-  
-  .btn-portfolio-inline:hover {
-    color: var(--e-global-color-primary);
-  }
-  
-  .btn-portfolio-inline:hover:before {
-    margin-bottom: 0;
-    opacity: 1;
-  }
-
-  .portfolio-v3 .portfolio-post-thumbnail a img {
-    display: inline-block;
-    position: relative;
-    object-fit: cover;
-    object-position: center;
-    max-height: 250px;
-  }
-  .portfolio-v3 .portfolio-post-thumbnail a {
-    display: inline-block;
-    position: relative;
-    height: 100%;
-    width: 100%;
-  }
-  /*Mailchimp*/
-
-  .elementor-1371 .elementor-element.elementor-element-fa8c2c9 > .elementor-widget-container{
-    background-color: #31c155 !important;
-    padding: 50px 60px 70px 70px !important;
-  }
-
-  .elementor-27 .elementor-element.elementor-element-42f7187 > .elementor-widget-container {
-    background-color: #31c155 !important;
-    padding: 50px 60px 70px 70px !important;
+  position: relative;
+  overflow: hidden;
+  max-width: 680px;
+  margin: 0 auto 30px;
+  -webkit-transition: all 0.35s;
+  transition: all 0.35s;
+  border-radius: 15px;
 }
 
-  @media(max-width:768px){
-    .elementor-1371 .elementor-element.elementor-element-fa8c2c9 > .elementor-widget-container{
-      padding: 15px 15px 15px 15px !important;
-    }
-    .elementor-27 .elementor-element.elementor-element-42f7187 > .elementor-widget-container {
-      padding: 15px 15px 15px 15px !important;
-    }
-  }
-  
-  .mailchimp-newsletter-form .mailchimp-title {
-    color: #000000 !important;
-    font-size: 40px !important;
-    margin: 0 0 35px !important;
-    font-weight: 600;
-  }
+.portfolio-v3 .case-content {
+  position: relative;
+  background: #fff;
+  z-index: 1;
+  padding: 25px 25px 25px;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  border: none;
+  border-top: 0;
+  height: auto !important;
+}
 
-  @media(max-width:768px){
-    .mailchimp-newsletter-form .mailchimp-content-form input[type="email"]{
-      width: 50% !important;
-      padding: 0px 5px 4px 5px !important;
-    }
+.portfolio-v3 .case-content .content-inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
 
-    .mailchimp-newsletter-submit{ 
-      width: 130px !important;
-     
-    }
-  }
+.portfolio-title-ref {
+  color: #31c155;
+  text-transform: uppercase;
+  font-weight: 800;
+}
 
-  .mailchimp-newsletter-form .mailchimp-content-form input[type="email"]{
-    color: #000000 !important;
-    background: #fff !important;
-    width: 70% ;
-    margin-right: 20px;
-    padding: 7px 5px 7px 5px;
-  }
+.portfolio-entry-desc {
+  font-size: 17px;
+  color: #000000;
+  line-height: 25px;
+}
 
-  .mailchimp-newsletter-submit{
-    background: #154451 !important;
-    width: 190px ;
-    color: #31c155 !important;
-    letter-spacing: 1px !important;
-  }
+.portfolio-read-more {
+  padding-top: 20px;
+}
 
+.btn-portfolio-inline {
+  font-size: 14px !important;
+  text-transform: uppercase;
+  color: #000000 !important;
+  position: relative;
+  -webkit-transition: all 0.35s;
+  transition: all 0.35s;
+  -moz-transition: all 0.35s;
+  -ms-transition: all 0.35s;
+  font-weight: 700;
+  letter-spacing: 0px;
+  z-index: 2;
+  line-height: 15px;
+  background-color: #fff;
+  height: 55px;
+  display: flex;
+  width: 180px;
+  text-align: center;
+  justify-content: center;
+  border: 2px solid #acacb8;
+  border-radius: 8px;
+  align-content: center;
+  flex-wrap: wrap;
+}
 
-  /*About Us PAge*/
+.btn-portfolio-inline:before {
+  content: '';
+  width: 100%;
+  height: 2px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+  background: var(--e-global-color-primary);
+  opacity: 0;
+  margin-bottom: -2px;
+  -webkit-transition: all 0.35s;
+  transition: all 0.35s;
+}
 
-  .plus-about{
-    color: #31c155 ;
-  }
+.btn-portfolio-inline:hover {
+  color: var(--e-global-color-primary);
+}
 
-  .social-icons span{
-    letter-spacing: 0px !important;
-  }
+.btn-portfolio-inline:hover:before {
+  margin-bottom: 0;
+  opacity: 1;
+}
 
-  .milestone-block.style-2 .box-content .milestone-icon .icon{
-    background: #edf3f600;
-  }
+.portfolio-v3 .portfolio-post-thumbnail a img {
+  display: inline-block;
+  position: relative;
+  object-fit: cover;
+  object-position: center;
+  max-height: 250px;
+}
 
-  span.dots-about{
-    display: flex;
-    transform: rotate(-90deg); 
-  }
+.portfolio-v3 .portfolio-post-thumbnail a {
+  display: inline-block;
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
 
-  span.green-dots{
-    color: #2dac6e;
-    font-size: 56px;
-  }
+/*Mailchimp*/
 
-  .mission-vision .gsc-heading .heading-line span{
-    height: 5px;
-    width: 20px;
-    background: #ea8e1b;
-  }
+.elementor-1371 .elementor-element.elementor-element-fa8c2c9>.elementor-widget-container {
+  background-color: #31c155 !important;
+  padding: 50px 60px 70px 70px !important;
+}
 
-  .gva-element-gva-gallery .gallery-item .image-content:after{
-    background: #2dac6e !important;
-    opacity: 0.5 !important;
-  }
+.elementor-27 .elementor-element.elementor-element-42f7187>.elementor-widget-container {
+  background-color: #31c155 !important;
+  padding: 50px 60px 70px 70px !important;
+}
 
-  /**Contact Form**/
-
-  .contact-us .breadcrumb li::after{
-    color: #000000 !important;
-  }
-
-  .contact-us .breadcrumb li a{
-    color: #000000 !important;
-  }
-
-  .contact-us  .breadcrumb li{
-    color: #ea8e1b !important;
-  }
-  
-  .wpcf7-form input[type*="email"], .wpcf7-form input[type*="text"], .wpcf7-form input[type*="tel"]{
-    background: #fff !important;
-    border: 1px solid #000000 !important;
-    border-radius: 5px !important;
-  }
-
-  input[type="text"], input[type="tel"], input[type="password"], input[type="email"], input[type="url"], input[type="date"], input[type="number"], textarea, select, #checkout_form .input_group > div input, #edit_user_profile .input_group > div input{
-    color: #000000 !important;
-  }
-
-  .wpcf7-form textarea{
-    background: #fff !important;
-    border: 1px solid #000000 !important;
-    border-radius: 5px !important;
-  }
-
-  .contact-buttons{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-
-  input.wpcf7-form-control.wpcf7-submit.has-spinner.contact-send{
-    background: #2dac6e !important;
-    border-radius: 10px;
-    color: #000000;
-    letter-spacing: 1px;
-    padding: 15px 40px 15px 40px;
-    font-weight: 900;
+@media(max-width:768px) {
+  .elementor-1371 .elementor-element.elementor-element-fa8c2c9>.elementor-widget-container {
+    padding: 15px 15px 15px 15px !important;
   }
 
-  input.contact-clear{
-    background: #ea8e1b !important;
-    border-radius: 10px;
-    color: #000000;
-    letter-spacing: 0px;
-    padding: 10px 40px 10px 40px;
-    font-weight: 900;
-    border: none;
-    text-transform: uppercase;
-    font-size: 14px;
+  .elementor-27 .elementor-element.elementor-element-42f7187>.elementor-widget-container {
+    padding: 15px 15px 15px 15px !important;
+  }
+}
+
+.mailchimp-newsletter-form .mailchimp-title {
+  color: #000000 !important;
+  font-size: 40px !important;
+  margin: 0 0 35px !important;
+  font-weight: 600;
+}
+
+@media(max-width:768px) {
+  .mailchimp-newsletter-form .mailchimp-content-form input[type="email"] {
+    width: 50% !important;
+    padding: 0px 5px 4px 5px !important;
   }
 
-  /**What We Do**/
-  .elementor-accordion .elementor-accordion-item .elementor-tab-title{
-    border: 0px solid #7E8D99 !important;
-    border-bottom-width: 1px !important;
+  .mailchimp-newsletter-submit {
+    width: 130px !important;
+
+  }
+}
+
+.mailchimp-newsletter-form .mailchimp-content-form input[type="email"] {
+  color: #000000 !important;
+  background: #fff !important;
+  width: 70%;
+  margin-right: 20px;
+  padding: 7px 5px 7px 5px;
+}
+
+.mailchimp-newsletter-submit {
+  background: #154451 !important;
+  width: 190px;
+  color: #31c155 !important;
+  letter-spacing: 1px !important;
+}
+
+
+/*About Us PAge*/
+
+.plus-about {
+  color: #31c155;
+}
+
+.social-icons span {
+  letter-spacing: 0px !important;
+}
+
+.milestone-block.style-2 .box-content .milestone-icon .icon {
+  background: #edf3f600;
+}
+
+span.dots-about {
+  display: flex;
+  transform: rotate(-90deg);
+}
+
+span.green-dots {
+  color: #2dac6e;
+  font-size: 56px;
+}
+
+.mission-vision .gsc-heading .heading-line span {
+  height: 5px;
+  width: 20px;
+  background: #ea8e1b;
+}
+
+.gva-element-gva-gallery .gallery-item .image-content:after {
+  background: #2dac6e !important;
+  opacity: 0.5 !important;
+}
+
+/**Contact Form**/
+
+.contact-us .breadcrumb li::after {
+  color: #000000 !important;
+}
+
+.contact-us .breadcrumb li a {
+  color: #000000 !important;
+}
+
+.contact-us .breadcrumb li {
+  color: #ea8e1b !important;
+}
+
+.wpcf7-form input[type*="email"],
+.wpcf7-form input[type*="text"],
+.wpcf7-form input[type*="tel"] {
+  background: #fff !important;
+  border: 1px solid #000000 !important;
+  border-radius: 5px !important;
+}
+
+input[type="text"],
+input[type="tel"],
+input[type="password"],
+input[type="email"],
+input[type="url"],
+input[type="date"],
+input[type="number"],
+textarea,
+select,
+#checkout_form .input_group>div input,
+#edit_user_profile .input_group>div input {
+  color: #000000 !important;
+}
+
+.wpcf7-form textarea {
+  background: #fff !important;
+  border: 1px solid #000000 !important;
+  border-radius: 5px !important;
+}
+
+.contact-buttons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+input.wpcf7-form-control.wpcf7-submit.has-spinner.contact-send {
+  background: #2dac6e !important;
+  border-radius: 10px;
+  color: #000000;
+  letter-spacing: 1px;
+  padding: 15px 40px 15px 40px;
+  font-weight: 900;
+}
+
+input.contact-clear {
+  background: #ea8e1b !important;
+  border-radius: 10px;
+  color: #000000;
+  letter-spacing: 0px;
+  padding: 10px 40px 10px 40px;
+  font-weight: 900;
+  border: none;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+
+/**What We Do**/
+.elementor-accordion .elementor-accordion-item .elementor-tab-title {
+  border: 0px solid #7E8D99 !important;
+  border-bottom-width: 1px !important;
+}
+
+a.what-we-do-butt {
+  font-size: 16px;
+  font-weight: 900;
+  letter-spacing: 0.04em;
+  padding: 15px;
+  border-radius: 5px 5px 5px 5px;
+  background-color: var(--e-global-color-primary);
+  color: var(--e-global-color-6f5d8a6);
+  text-transform: uppercase;
+  line-height: 22px;
+  transition: 0.7s;
+}
+
+a.what-we-do-butt:hover {
+  background-color: #ea8e1b;
+}
+
+.what-we-do-text {
+  text-align: justify;
+}
+
+/* Services Widgets */
+/* Default styles for larger screens */
+.gsc-services-group>div {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.gsc-services-group .item-columns {
+  float: none;
+  flex: 0 0 25%;
+  margin-bottom: 20px;
+}
+.gsc-services-group .service-item {
+  height: 100%;
+  flex: 1;
+  border-radius: 14px;
+  overflow: hidden !important;
+}
+
+/* Media query for tablets (max-width: 1024px) */
+@media (max-width: 1534px) {
+
+  .gsc-services-group .item-columns {
+    flex: 0 0 33.33333%;
+  }
+}
+
+/* Media query for tablets (max-width: 1024px) */
+@media (max-width: 1024px) {
+
+  .gsc-services-group .item-columns {
+    flex: 0 0 50%;
+  }
+}
+
+/* Media query for mobile (max-width: 768px) */
+@media (max-width: 768px) {
+  .gsc-services-group>div {
+    flex-direction: column;
   }
 
-  a.what-we-do-butt{
-    font-size: 16px;
-    font-weight: 900;
-    letter-spacing: 0.04em;
-    padding: 15px;
-    border-radius: 5px 5px 5px 5px;
-    background-color: var(--e-global-color-primary);
-    color: var(--e-global-color-6f5d8a6);
-    text-transform: uppercase;
-    line-height: 22px;
-    transition: 0.7s;
+  .gsc-services-group .item-columns {
+    flex: 0 0 100%;
   }
+}
 
-  a.what-we-do-butt:hover{
-    background-color: #ea8e1b;
-  }
+.service-item-content {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
 
- .what-we-do-text{
-    text-align: justify;
-  }
+.service-image {
+  flex-shrink: 0;
+}
+
+.service-content {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.gsc-services-group .service-item.style-3 .service-item-content .service-content .read-more {
+  margin-top: auto !important;
+}
