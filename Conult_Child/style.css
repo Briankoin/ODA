@@ -8,6 +8,10 @@ Template: conult
 */
 
 /* Template customizations */
+body{
+  font-weight: 300;
+  line-height: 1.3em;
+}
 ul.gva-nav-menu > li > a::after {
 	background-color: var(--e-global-color-secondary);
 }
