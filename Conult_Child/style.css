@@ -449,3 +449,9 @@ a.what-we-do-butt:hover {
 .gsc-services-group .service-item.style-3 .service-item-content .service-content .read-more {
   margin-top: auto !important;
 }
+
+/* Team Experience */
+
+.content p{
+  text-align: justify ;
+}

@@ -94,21 +94,6 @@ class My_Profile_Card_Widget extends GVAElement_Base {
         );
 
         $this->add_control(
-            'facebook_link',
-            [
-                'label' => esc_html__( 'Facebook Link', 'conult-themer' ),
-                'type' => \Elementor\Controls_Manager::URL,
-                'placeholder' => esc_html__( 'https://www.facebook.com/', 'conult-themer' ),
-                'show_external' => true,
-                'default' => [
-                    'url' => '',
-                    'is_external' => true,
-                    'nofollow' => true,
-                ],
-            ]
-        );
-
-        $this->add_control(
             'twitter_link',
             [
                 'label' => esc_html__( 'Twitter Link', 'conult-themer' ),
@@ -129,21 +114,6 @@ class My_Profile_Card_Widget extends GVAElement_Base {
                 'label' => esc_html__( 'LinkedIn Link', 'conult-themer' ),
                 'type' => \Elementor\Controls_Manager::URL,
                 'placeholder' => esc_html__( 'https://www.linkedin.com/', 'conult-themer' ),
-                'show_external' => true,
-                'default' => [
-                    'url' => '',
-                    'is_external' => true,
-                    'nofollow' => true,
-                ],
-            ]
-        );
-
-        $this->add_control(
-            'instagram_link',
-            [
-                'label' => esc_html__( 'Instagram Link', 'conult-themer' ),
-                'type' => \Elementor\Controls_Manager::URL,
-                'placeholder' => esc_html__( 'https://www.instagram.com/', 'conult-themer' ),
                 'show_external' => true,
                 'default' => [
                     'url' => '',
@@ -282,11 +252,8 @@ class My_Profile_Card_Widget extends GVAElement_Base {
         $name = $settings['name'];
         $position = $settings['position'];
         $background = $settings['background'];
-        $facebook_link = $settings['facebook_link']['url'];
         $x_link = $settings['twitter_link']['url'];
         $linkedin_link = $settings['linkedin_link']['url'];
-        $instagram_link = $settings['instagram_link']['url'];
-        // ... other social links
 
         // Sanitize output (especially for the background message)
         $background = wp_kses_post( $background ); 
@@ -306,30 +273,18 @@ class My_Profile_Card_Widget extends GVAElement_Base {
                 <p class="background-text"><?php echo wp_kses_post( $background ); ?></p>
                 <div class="social-icons">
                     <span class="connect-on"> CONNECT ON </span>
-                    <?php if ( ! empty( $facebook_link ) ) : ?>
-                        <div class="connect">
-                    <a href="<?php echo esc_url( $facebook_link ); ?>" target="_blank">
-                        <i class="fab fa-facebook-f"></i>
-                    </a>
-                <?php endif; ?>
+                        <div class="connect">                
+                            <?php if ( ! empty( $x_link ) ) : ?>
+                                <a href="<?php echo esc_url( $x_link ); ?>" target="_blank">
+                                    <i class="fab fa-x-twitter"></i>
+                                </a>
+                            <?php endif; ?>
 
-                <?php if ( ! empty( $x_link ) ) : ?>
-                    <a href="<?php echo esc_url( $x_link ); ?>" target="_blank">
-                        <i class="fab fa-x-twitter"></i>
-                    </a>
-                <?php endif; ?>
-
-                <?php if ( ! empty( $linkedin_link ) ) : ?>
-                    <a href="<?php echo esc_url( $linkedin_link ); ?>" target="_blank">
-                        <i class="fab fa-linkedin-in"></i>
-                    </a>
-                <?php endif; ?>
-
-                <?php if ( ! empty( $instagram_link ) ) : ?>
-                    <a href="<?php echo esc_url( $instagram_link ); ?>" target="_blank">
-                        <i class="fab fa-instagram"></i>
-                    </a>
-                <?php endif; ?>
+                            <?php if ( ! empty( $linkedin_link ) ) : ?>
+                                <a href="<?php echo esc_url( $linkedin_link ); ?>" target="_blank">
+                                    <i class="fab fa-linkedin-in"></i>
+                                </a>
+                            <?php endif; ?>                
                         </div>
                 </div>
             </div>
