@@ -455,3 +455,16 @@ a.what-we-do-butt:hover {
 .content p{
   text-align: justify ;
 }
+
+/* Counties */
+
+.counties .btn-wrapper span.btn-text.bt_icon_before{
+  text-transform: uppercase;
+  font-weight: 900;
+  font-size: 17px;
+}
+
+.counties .btn-text.bt_icon_before i{
+  font-size: 17px;
+  font-weight: 900;
+}
