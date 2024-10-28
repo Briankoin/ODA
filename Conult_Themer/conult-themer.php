@@ -89,6 +89,11 @@ class Gavias_Conult_Themer{
 
       require_once(GAVIAS_CONULT_PLUGIN_DIR . 'posttypes/portfolio.php');
 
+<<<<<<< HEAD
+=======
+      require_once(GAVIAS_CONULT_PLUGIN_DIR . 'posttypes/counties.php');
+
+>>>>>>> e7639644a06f914a78ef1b4c0805f299fb0b054f
       require_once(GAVIAS_CONULT_PLUGIN_DIR . 'posttypes/template.php');
 
 
