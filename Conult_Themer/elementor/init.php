@@ -273,6 +273,9 @@ class Conult_Elementor_Addons {
 	  wp_register_script( 'amcharts-worldlow', 'https://cdn.amcharts.com/lib/5/geodata/worldLow.js', array(), null, true );
 	  wp_register_script( 'amcharts-animated', 'https://cdn.amcharts.com/lib/5/themes/Animated.js', array(), null, true );
 
+	  wp_register_script('select2-script', GAVIAS_CONULT_PLUGIN_URL . '/elementor/assets/select2.min.js'); 
+
+
 
 
    }
@@ -289,7 +292,7 @@ class Conult_Elementor_Addons {
 
 		wp_register_style('amchart-css', GAVIAS_CONULT_PLUGIN_URL . 'elementor/assets/libs/amchart.css', false, '1.0.0');
 
-
+		wp_register_script('select2-style', GAVIAS_CONULT_PLUGIN_URL . '/elementor/assets/select2.min.css'); 
  	}
 
  	
