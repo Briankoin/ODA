@@ -479,3 +479,37 @@ a.what-we-do-butt:hover {
   font-size: 17px;
   font-weight: 900;
 }
+
+.counties-dropdown{
+  display: flex;
+  justify-content: flex-end;
+}
+
+.counties-dropdown-button{
+  width: 257px !important;
+  justify-content: center !important;
+  height: 60px !important;
+  background-color: #FFFFFF !important;
+  color: #31c155 !important;
+  border: 2px solid #31C155 !important;
+  border-radius: 10px !important;
+  font-size: 17px !important;
+  font-weight: 900;
+  text-transform: uppercase;
+  padding: 27px 30px !important;
+  line-height: 22px;
+  letter-spacing: 1px;
+  transition: 0.5s;
+}
+
+.counties-dropdown-button:hover{
+  background-color: #ea8e1b !important;
+  color: #fff !important;
+  border: 2px solid #ea8e1b !important;
+}
+
+@media (max-width: 767px){
+  .counties-dropdown{
+    justify-content: center;
+  }
+}

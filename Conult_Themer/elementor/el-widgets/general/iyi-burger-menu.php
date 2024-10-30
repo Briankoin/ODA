@@ -310,7 +310,7 @@ class iyi_burger_button_widget extends GVAElement_Base
         </style>
         <div class="counties-dropdown">
             <button class="counties-dropdown-button">
-                Select an option <span class="counties-dropdown-icon">&#9662;</span>
+                Select Country<span class="counties-dropdown-icon"><i class="fas fa-bars"></i></span>
             </button>
         </div>
         <script>
