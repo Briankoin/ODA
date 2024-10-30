@@ -165,11 +165,8 @@ if(!function_exists('gavias_post_type_Counties')){
 function gaviasthemer_counties_query( $args ){
 
  	$ds = array(
-
 		'post_type'   => 'Counties',
-
 		'posts_per_page'  =>  12
-
  	);
 
  	$args = array_merge( $ds , $args );
