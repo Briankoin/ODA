@@ -14,7 +14,7 @@ body {
   color: #172333;
 }
 
-ul.gva-nav-menu>li>a::after {
+ul.gva-nav-menu > li > a::after {
   background-color: var(--e-global-color-secondary);
 }
 
@@ -34,11 +34,11 @@ ul.gva-nav-menu>li>a::after {
   left: 0 !important;
   bottom: 0;
   background: transparent;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 .custom-breadcrumb .breadcrumb li a {
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 .custom-breadcrumb .breadcrumb li a:hover {
@@ -58,7 +58,7 @@ ul.gva-nav-menu>li>a::after {
   content: "\f054";
   font-family: "Font Awesome 5 Free";
   font-weight: 700;
-  color: #FFFFFF;
+  color: #ffffff;
   font-size: 12px;
   line-height: 16px;
 }
@@ -82,11 +82,19 @@ ul.gva-nav-menu>li>a::after {
 .padding-0 {
   padding: 0 !important;
 }
+
 /* Logo */
 .gva-offcanvas-content .top-canvas .logo-mm img {
-	max-height: 82px;
-	padding-bottom: 10px;
+  max-height: 82px;
+  padding-bottom: 10px;
 }
+
+/* Mobile header */
+.header-mobile-content .header-content-inner {
+  display: flex;
+  align-items: center;
+}
+
 /*Portfolio */
 
 .portfolio-v3 {
@@ -162,7 +170,7 @@ ul.gva-nav-menu>li>a::after {
 }
 
 .btn-portfolio-inline:before {
-  content: '';
+  content: "";
   width: 100%;
   height: 2px;
   position: absolute;
@@ -202,22 +210,30 @@ ul.gva-nav-menu>li>a::after {
 
 /*Mailchimp*/
 
-.elementor-1371 .elementor-element.elementor-element-fa8c2c9>.elementor-widget-container {
+.elementor-1371
+  .elementor-element.elementor-element-fa8c2c9
+  > .elementor-widget-container {
   background-color: #31c155 !important;
   padding: 50px 60px 70px 70px !important;
 }
 
-.elementor-27 .elementor-element.elementor-element-42f7187>.elementor-widget-container {
+.elementor-27
+  .elementor-element.elementor-element-42f7187
+  > .elementor-widget-container {
   background-color: #31c155 !important;
   padding: 50px 60px 70px 70px !important;
 }
 
-@media(max-width:768px) {
-  .elementor-1371 .elementor-element.elementor-element-fa8c2c9>.elementor-widget-container {
+@media (max-width: 768px) {
+  .elementor-1371
+    .elementor-element.elementor-element-fa8c2c9
+    > .elementor-widget-container {
     padding: 15px 15px 15px 15px !important;
   }
 
-  .elementor-27 .elementor-element.elementor-element-42f7187>.elementor-widget-container {
+  .elementor-27
+    .elementor-element.elementor-element-42f7187
+    > .elementor-widget-container {
     padding: 15px 15px 15px 15px !important;
   }
 }
@@ -229,7 +245,7 @@ ul.gva-nav-menu>li>a::after {
   font-weight: 600;
 }
 
-@media(max-width:768px) {
+@media (max-width: 768px) {
   .mailchimp-newsletter-form .mailchimp-content-form input[type="email"] {
     width: 50% !important;
     padding: 0px 5px 4px 5px !important;
@@ -237,7 +253,6 @@ ul.gva-nav-menu>li>a::after {
 
   .mailchimp-newsletter-submit {
     width: 130px !important;
-
   }
 }
 
@@ -255,7 +270,6 @@ ul.gva-nav-menu>li>a::after {
   color: #31c155 !important;
   letter-spacing: 1px !important;
 }
-
 
 /*About Us PAge*/
 
@@ -323,8 +337,8 @@ input[type="date"],
 input[type="number"],
 textarea,
 select,
-#checkout_form .input_group>div input,
-#edit_user_profile .input_group>div input {
+#checkout_form .input_group > div input,
+#edit_user_profile .input_group > div input {
   color: #000000 !important;
 }
 
@@ -363,7 +377,7 @@ input.contact-clear {
 
 /**What We Do**/
 .elementor-accordion .elementor-accordion-item .elementor-tab-title {
-  border: 0px solid #7E8D99 !important;
+  border: 0px solid #7e8d99 !important;
   border-bottom-width: 1px !important;
 }
 
@@ -390,16 +404,18 @@ a.what-we-do-butt:hover {
 
 /* Services Widgets */
 /* Default styles for larger screens */
-.gsc-services-group>div {
+.gsc-services-group > div {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
 }
+
 .gsc-services-group .item-columns {
   float: none;
   flex: 0 0 25%;
   margin-bottom: 20px;
 }
+
 .gsc-services-group .service-item {
   height: 100%;
   flex: 1;
@@ -409,7 +425,6 @@ a.what-we-do-butt:hover {
 
 /* Media query for tablets (max-width: 1024px) */
 @media (max-width: 1534px) {
-
   .gsc-services-group .item-columns {
     flex: 0 0 33.33333%;
   }
@@ -417,7 +432,6 @@ a.what-we-do-butt:hover {
 
 /* Media query for tablets (max-width: 1024px) */
 @media (max-width: 1024px) {
-
   .gsc-services-group .item-columns {
     flex: 0 0 50%;
   }
@@ -425,7 +439,7 @@ a.what-we-do-butt:hover {
 
 /* Media query for mobile (max-width: 768px) */
 @media (max-width: 768px) {
-  .gsc-services-group>div {
+  .gsc-services-group > div {
     flex-direction: column;
   }
 
@@ -450,14 +464,18 @@ a.what-we-do-butt:hover {
   flex-direction: column;
 }
 
-.gsc-services-group .service-item.style-3 .service-item-content .service-content .read-more {
+.gsc-services-group
+  .service-item.style-3
+  .service-item-content
+  .service-content
+  .read-more {
   margin-top: auto !important;
 }
 
 /* Team Experience */
 
-.content p{
-  text-align: justify ;
+.content p {
+  text-align: justify;
 }
 
 /* Counties */
@@ -468,34 +486,34 @@ a.what-we-do-butt:hover {
   font-size: 17px;
 }
 
-.counties span.btn-text.bt_icon_after{
+.counties span.btn-text.bt_icon_after {
   text-transform: uppercase;
   font-weight: 900;
   font-size: 17px;
 }
 
-.counties .btn-text.bt_icon_before  i{
+.counties .btn-text.bt_icon_before i {
   font-size: 17px;
   font-weight: 900;
 }
 
-.counties .btn-text.bt_icon_after i{
+.counties .btn-text.bt_icon_after i {
   font-size: 17px;
   font-weight: 900;
 }
 
-.counties-dropdown{
+.counties-dropdown {
   display: flex;
   justify-content: flex-end;
 }
 
-.counties-dropdown-button{
+.counties-dropdown-button {
   width: 257px !important;
   justify-content: center !important;
   height: 60px !important;
-  background-color: #FFFFFF !important;
+  background-color: #ffffff !important;
   color: #31c155 !important;
-  border: 2px solid #31C155 !important;
+  border: 2px solid #31c155 !important;
   border-radius: 10px !important;
   font-size: 17px !important;
   font-weight: 900;
@@ -506,14 +524,14 @@ a.what-we-do-butt:hover {
   transition: 0.5s;
 }
 
-.counties-dropdown-button:hover{
+.counties-dropdown-button:hover {
   background-color: #ea8e1b !important;
   color: #fff !important;
   border: 2px solid #ea8e1b !important;
 }
 
-@media (max-width: 767px){
-  .counties-dropdown{
+@media (max-width: 767px) {
+  .counties-dropdown {
     justify-content: center;
   }
 }
