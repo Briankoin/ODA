@@ -94,7 +94,11 @@ ul.gva-nav-menu > li > a::after {
   display: flex;
   align-items: center;
 }
-
+.gva-navigation-menu.menu-align-center .gva-nav-menu {
+	display: flex;
+	justify-content: space-between;
+	gap: 5px;
+}
 /*Portfolio */
 
 .portfolio-v3 {
